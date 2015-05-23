@@ -1,8 +1,11 @@
 #Health Base
 
 Instructions:
+
 1. cl2015.py script to clean the dataset
+
 2. mkdb.py to add the dataset to the db
+
 3. run.py to run app locally
 
 
