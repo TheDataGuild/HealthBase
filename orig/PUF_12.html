@@ -1,50 +1,0 @@
-<html>
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<link rel="shortcut icon" type="image/ico" href="http://www.sprymedia.co.uk/media/images/favicon.ico" />
-		
-		<link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css">
-
-		<title>Healthbase</title>
-
-		
-		<script type="text/javascript" language="javascript" src="https://legacy.datatables.net/release-datatables/media/js/jquery.js"></script>
-		<script type="text/javascript" language="javascript" src="https://legacy.datatables.net/release-datatables/media/js/jquery.dataTables.js"></script>
-		<script type="text/javascript" charset="utf-8">
-			$(document).ready(function() {
-				$('#example').dataTable( {
-					"bProcessing": true,
-					"bServerSide": true,
-					"sAjaxSource": "/server_processing_PUF.php"
-				} );
-			} );
-		</script>
-	</head>
-<body>
-<div class="full_width big">
-				<i><H1>Healthbase: Medicare Fee-For Service, Public Usage File (PUF), a Data Guild Product</H1></i> 
-<br>
-Medicare Fee-For Service Provider Utilization & Payment Data<br>
-Physician and Other SupplierPublic Use File<br>CALENDAR YEAR 2012<br>
-Source: Medicare-Physician-and-Other-Supplier-PUF-a-CY2012<br>
-<br>
-			</div>
-
-<table cellpadding="0" cellspacing="0" border="0" class="display" id="example">
-        <thead>
-            <tr>
-		<th>id</th>
-		<th>npi</th><th>nppes_provider_last_org_name</th><th>nppes_provider_first_name</th><th>nppes_provider_mi</th><th>nppes_credentials</th><th>nppes_provider_gender</th><th>nppes_entity_code</th><th>nppes_provider_street1</th><th>nppes_provider_street2</th><th>nppes_provider_city</th><th>nppes_provider_zip</th><th>nppes_provider_state</th><th>nppes_provider_country</th><th>provider_type</th><th>medicare_participation_indicator</th><th>place_of_service</th><th>hcpcs_code</th><th>hcpcs_description</th><th>line_srvc_cnt</th><th>bene_unique_cnt</th><th>bene_day_srvc_cnt</th><th>average_Medicare_allowed_amt</th><th>stdev_Medicare_allowed_amt</th><th>average_submitted_chrg_amt</th><th>stdev_submitted_chrg_amt</th><th>average_Medicare_pmt_amt</th><th>stdev_Medicare_pay_amt</th>
-            </tr>
-        </thead>
- 
-        <tfoot>
-            <tr>
-		<th>id</th>
-		<th>npi</th><th>nppes_provider_last_org_name</th><th>nppes_provider_first_name</th><th>nppes_provider_mi</th><th>nppes_credentials</th><th>nppes_provider_gender</th><th>nppes_entity_code</th><th>nppes_provider_street1</th><th>nppes_provider_street2</th><th>nppes_provider_city</th><th>nppes_provider_zip</th><th>nppes_provider_state</th><th>nppes_provider_country</th><th>provider_type</th><th>medicare_participation_indicator</th><th>place_of_service</th><th>hcpcs_code</th><th>hcpcs_description</th><th>line_srvc_cnt</th><th>bene_unique_cnt</th><th>bene_day_srvc_cnt</th><th>average_Medicare_allowed_amt</th><th>stdev_Medicare_allowed_amt</th><th>average_submitted_chrg_amt</th><th>stdev_submitted_chrg_amt</th><th>average_Medicare_pmt_amt</th><th>stdev_Medicare_pay_amt</th>            </tr>
-        </tfoot>
-    </table>
-
-
-</body>
-</html>
