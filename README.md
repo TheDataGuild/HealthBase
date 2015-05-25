@@ -2,13 +2,13 @@
 
 To run the app locally:
 
-0. Download the data
+1. Download the data
 
-1. cl2015.py to clean the dataset
+2. cl2015.py to clean the dataset
 
-2. mkdb.py to add the dataset to the db
+3. mkdb.py to add the dataset to the db
 
-3. run.py
+4. run.py
 
 
 Original Prototypes: 

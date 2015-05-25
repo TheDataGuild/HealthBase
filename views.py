@@ -24,7 +24,6 @@ def logout():
 	return redirect(url_for('login'))
 
 @app.route("/table")
-@app.route("/")
 def table():
     conn = connect_db()
     cur = conn.execute("SELECT carrier, locality, hcpcs, nonFacFee, facFee FROM hb2 LIMIT 100;")
