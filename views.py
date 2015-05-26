@@ -9,19 +9,7 @@ def connect_db():
 
 @app.route("/", methods=['GET', 'POST'])
 def login():
-	# if request.method == 'POST':
-	# 	if request.form['username'] != app.config['USERNAME'] or request.form['PASSWORD']:
-	# 		error = 'Invalid Credentials'
-	# 	else:
-	# 		session['logged_in'] = True
-	# 		return redirect(url_for('table'))
 	return render_template('index.html')
-
-@app.route('/logout')
-def logout():
-	# session.pop('logged_in', None)
-	# flash('You were logged out')
-	return redirect(url_for('login'))
 
 @app.route("/table")
 def table():
