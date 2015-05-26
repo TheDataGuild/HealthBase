@@ -1,4 +1,4 @@
-#Healthbase
+#HealthBase
 
 To run the app locally:
 
