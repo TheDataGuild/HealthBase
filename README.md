@@ -11,11 +11,9 @@ To run the app locally:
 4. run.py
 
 
-Original Prototypes: 
+Original Prototype: 
 
 http://ec2-52-11-134-43.us-west-2.compute.amazonaws.com/PF_ALL15.html
-
-http://ec2-52-11-134-43.us-west-2.compute.amazonaws.com/PUF_12.html
 
 Data Sources: 
 
