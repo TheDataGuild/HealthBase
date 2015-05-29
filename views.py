@@ -9,7 +9,7 @@ def connect_db():
 
 @app.route("/", methods=['GET', 'POST'])
 def login():
-	return render_template('index.html')
+    return render_template('index.html')
 
 @app.route("/table")
 def table():

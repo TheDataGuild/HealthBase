@@ -1,5 +1,3 @@
-# create db from clean PF 2015 file
-
 import pandas as pd
 df = pd.read_csv('data/PFALL15_new.csv')
 
