@@ -1,5 +1,3 @@
-# clean version of locality-specific physician fee schedule payment amounts for services covered by the Medicare Physician Fee Schedule
-
 import pandas as pd
 df = pd.read_csv('PFALL15.txt')
 

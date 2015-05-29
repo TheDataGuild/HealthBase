@@ -7,7 +7,7 @@ app.config.from_object('config')
 def connect_db():
     return sqlite3.connect(app.config['DATABASE'])
 
-@app.route("/", methods=['GET', 'POST'])
+@app.route("/")
 def login():
     return render_template('index.html')
 
