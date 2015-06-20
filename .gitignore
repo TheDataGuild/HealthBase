@@ -4,6 +4,6 @@
 venv
 
 data/*
-hb.db
+healthbase.db
 test.db
 *.ipynb
