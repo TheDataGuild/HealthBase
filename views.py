@@ -26,16 +26,17 @@ def table():
 
 # api
 
-@app.route('/gethcpcs', methods=['GET'])
-def get_hcpcs():
-    return get_data('hcpcs')
+@app.route('/getFacFees', methods=['GET'])
+def get_fac_fee():
+    return get_data('facFee')
 
 # sql injections = :<
 def get_data(col):
     conn = access_db()
-    q = "SELECT {} FROM h LIMIT 100;".format(col)
+    q = "SELECT {}, hcpcs FROM h LIMIT 100;".format(col)
     cur = conn.execute(q)
-    return json.dumps([dict(hcpcs=row[0]) for row in cur.fetchall()])
+    return json.dumps([dict(facFee=row[0], hcpcs=row[1]) for row in \
+                                                             cur.fetchall()])
 
 @app.errorhandler(404)
 def not_found(error):

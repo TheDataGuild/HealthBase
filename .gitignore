@@ -7,3 +7,5 @@ data/*
 healthbase.db
 test.db
 *.ipynb
+hb.pub
+hb
