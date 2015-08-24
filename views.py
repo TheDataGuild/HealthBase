@@ -17,20 +17,19 @@ def login():
 @app.route("/table")
 def table():
     conn = access_db()
-    cur = conn.execute("SELECT carrier, locality, hcpcs, nonFacFee, facFee \
-                        FROM h LIMIT 1000;")
+    cur = conn.execute("SELECT carrier, locality, hcpcs, nonFacFee, facFee, \
+                        state, location FROM h LIMIT 1000;")
     pf15 = [dict(carrier=row[0], locality=row[1], hcpcs=row[2], \
-            non_fac_fee=row[3], fac_fee=row[4]) for row in cur.fetchall()]
+            non_fac_fee=row[3], fac_fee=row[4], state=row[5], location=row[6]) \
+            for row in cur.fetchall()]
     conn.close()
     return render_template('table.html', data=pf15)
 
 # api
-
 @app.route('/getFacFees', methods=['GET'])
 def get_fac_fee():
     return get_data('facFee')
 
-# sql injections = :<
 def get_data(col):
     conn = access_db()
     q = "SELECT {}, hcpcs FROM h LIMIT 100;".format(col)
