@@ -49,7 +49,7 @@ df['locality'] = localities
 engine = sqlalchemy.create_engine('sqlite:///healthbase.db')
 
 types = {'carrier': sqlalchemy.types.Integer, 'hcpcs': sqlalchemy.types.String, \
-         'locality': sqlalchemy.types.Integer, 'facFee': sqlalchemy.types.Float, \
+         'locality': sqlalchemy.types.String, 'facFee': sqlalchemy.types.Float, \
          'nonFacFee': sqlalchemy.types.Float, 'state': sqlalchemy.types.String, \
          'location': sqlalchemy.types.String}
 
